@@ -7,6 +7,56 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.12.1] - 2026-03-30
+
+### Added
+
+- Add use-git-agent skill to git plugin for explicit git-agent invocation
+- Add need-vet skill to refactor plugin for verification gate control
+- Add need_vet verification flag to devtools plugin for slash command classification
+- Add shared utility functions to utils plugin for JSON handling and output formatting
+- Add prd creation skill and templates to office plugin
+- Add vet skill to superpowers for verification workflow control
+
+### Changed
+
+- Refactor git plugin to streamline git-agent workflow with unified skill structure
+- Refactor git plugin to consolidate commit workflow into single skill with CLI support
+- Refactor git plugin to update skill documentation with comprehensive tool lists
+- Refactor git plugin to remove deprecated commit hooks and update hook patterns
+- Refactor utils plugin to enable claude auth and update hook configuration
+- Refactor utils plugin to improve vet utilities and hook output handling
+- Refactor gitflow plugin to unify workflow templates and standardize skill tool definitions
+- Refactor cod (claude-config) plugin to ensure task completion before promise resolution
+- Refactor cod (claude-config) plugin to update plugin list and commit scopes
+- Refactor office plugin to update agent-browser sync script for better integration
+- Refactor superpowers plugin to standardize skill name references and align executing-plans
+- Refactor devtools plugin to enhance superpowers hooks with improved detection
+
+### Fixed
+
+- Fix utils plugin to preserve skill context and clear vet flag on task completion
+- Fix utils plugin to change stop-hook exit code and improve output handling
+- Fix meeseeks plugin to update skip flag handling and improve hook compatibility
+- Fix meeseeks plugin to make hooks macOS-compatible and improve prompt merge
+
+### Documentation
+
+- Update git skill descriptions with comprehensive guidance and tool requirements
+- Update git plugin documentation with install section and CLI guide
+- Update git skill documentation with agent workflow patterns
+- Update gitflow skill documentation with git-agent steps integration
+- Update git skill documentation with commit tool description and guidance
+- Update cod (claude-config) plugin documentation with updated skill descriptions
+- Update superpowers plugin documentation with skill descriptions and patterns
+- Update devtools plugin documentation with slash command classification details
+- Improve skill description documentation across all plugins
+
+### Chores
+
+- Bump devtools plugin version to 1.12.1
+- Sync marketplace versions with plugin updates
+
 ## [v1.12.0] - 2026-03-24
 
 ### Added
@@ -372,7 +422,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix build and release scripts for version detection and TOML prompts
 - Improve sync script compatibility and error handling
 
-[unreleased]: https://github.com/FradSer/dotclaude/compare/v1.7.0...HEAD
+[unreleased]: https://github.com/FradSer/dotclaude/compare/v1.12.1...HEAD
+[v1.12.1]: https://github.com/FradSer/dotclaude/compare/v1.12.0...v1.12.1
+[v1.12.0]: https://github.com/FradSer/dotclaude/compare/v1.11.0...v1.12.0
+[v1.11.0]: https://github.com/FradSer/dotclaude/compare/v1.10.0...v1.11.0
+[v1.10.0]: https://github.com/FradSer/dotclaude/compare/v1.9.0...v1.10.0
+[v1.9.0]: https://github.com/FradSer/dotclaude/compare/v1.8.0...v1.9.0
+[v1.8.0]: https://github.com/FradSer/dotclaude/compare/v1.7.0...v1.8.0
 [v1.7.0]: https://github.com/FradSer/dotclaude/compare/v1.6.1...v1.7.0
 [v1.6.1]: https://github.com/FradSer/dotclaude/compare/v1.6.0...v1.6.1
 [v1.6.0]: https://github.com/FradSer/dotclaude/compare/v1.5.0...v1.6.0
